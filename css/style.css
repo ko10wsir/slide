@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+li{
+    align-items: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+.wrapper{
+    display: flex;
+}
+.wrapper .first_text{
+    font-size: 60px;
+    color: #fff;
+}
+
+.wrapper .sec_texts{
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+.sec_texts li{
+    position: relative;
+    top: 0;
+    font-size: 60px;
+    color: #0ef;
+    list-style: none;
+    padding: 0px 20px;
+    text-shadow: 0 0 10px #0ef;
+    animation: slide 12s steps(4) infinite, colorful 6s infinite;
+}
+@keyframes slide{
+100%{
+    top: -360px;
+}
+}
+
+@keyframes colorful{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.sec_texts li span{
+    position: relative;
+}
+.sec_texts li span::before{
+    content: "";
+    position: absolute;
+    left:0;
+    width: 400px;
+    height: 90px;
+    background-color: black;
+    border-left: 2px solid #0ef;
+   animation: typing 1.5s steps(10) infinite alternate;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+
+
+
+
+
+  
+ 
+  
